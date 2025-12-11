@@ -1,0 +1,15 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="#E8F4F8"/>
+  <g transform="translate(256, 256)">
+    <!-- Activity/Brain Wave Icon -->
+    <path d="M-120,-20 L-80,10 L-40,-40 L0,60 L40,-40 L80,10 L120,-20" 
+          stroke="#1a1a1a" 
+          stroke-width="24" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          fill="none"/>
+    <!-- Decorative dots -->
+    <circle cx="-120" cy="-20" r="12" fill="#10b981"/>
+    <circle cx="120" cy="-20" r="12" fill="#10b981"/>
+  </g>
+</svg>

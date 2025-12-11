@@ -1,0 +1,17 @@
+{
+  "name": "NeuroFlow IV",
+  "short_name": "NeuroFlow",
+  "description": "Therapeutic audio interface for clinical environments.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#E8F4F8",
+  "theme_color": "#1a1a1a",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

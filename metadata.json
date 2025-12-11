@@ -1,0 +1,7 @@
+{
+  "name": "NeuroFlow IV",
+  "description": "Therapeutic audio interface for clinical environments featuring AI-driven binaural beats and immersive visualization.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
