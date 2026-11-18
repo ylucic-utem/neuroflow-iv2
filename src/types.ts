@@ -26,10 +26,10 @@ export enum CarrierMode {
 }
 
 export enum SpatialMode {
-    None = 'none',
-    Circular3D = '3d',      // Rotates around head
-    Bilateral = 'bilateral', // EMDR Left-Right Scan
-    Vortex = 'vortex'       // Complex Figure-8 Loop (Hemi-Sync style)
+  None = 'none',
+  Circular3D = '3d',      // Rotates around head
+  Bilateral = 'bilateral', // EMDR Left-Right Scan
+  Vortex = 'vortex'       // Complex Figure-8 Loop (Hemi-Sync style)
 }
 
 export interface AudioState {
@@ -38,21 +38,21 @@ export interface AudioState {
   binauralVolume: number;
   noiseVolume: number;
   voiceVolume: number;
-  
+
   // Frequency State
   carrierFreq: number;
   beatFreq: number;
   carrierMode: CarrierMode;
-  
+
   noiseType: NoiseType;
   isMuted: boolean;
   binauralSpatial: boolean;
-  
+
   // Refactored Spatial Audio
   noiseSpatialMode: SpatialMode;
-  
+
   isochronicAmount: number;
-  
+
   // Advanced Features
   phaseLocking: boolean; // Neural Phase Locking (AM Modulation)
 
@@ -61,13 +61,13 @@ export interface AudioState {
   rampStartFreq: number;
   rampEndFreq: number;
   rampDurationMinutes: number;
-  
+
   // Sequence Mode
   isSequencing: boolean;
-  
+
   // Safety / Session
-  autoWakeup: boolean; 
-  
+  autoWakeup: boolean;
+
   // New Safety & UX Features
   safetyMode: boolean; // Limits strobe/pulse depth
   breathingGuide: boolean; // 0.1Hz Amplitude Modulation
@@ -93,12 +93,12 @@ export interface ProtocolStep {
 }
 
 export interface ProtocolStatus {
-    isActive: boolean;
-    currentStepIndex: number;
-    totalSteps: number;
-    currentStepName: string;
-    remainingSeconds: number;
-    nextStepName?: string;
+  isActive: boolean;
+  currentStepIndex: number;
+  totalSteps: number;
+  currentStepName: string;
+  remainingSeconds: number;
+  nextStepName?: string;
 }
 
 export interface SequenceStep {
@@ -133,18 +133,48 @@ export interface AIRecommendation {
   noiseType: NoiseType;
   explanation: string;
   recommendedDurationMin: number;
-  
+
   // Advanced Controls
   carrierMode: CarrierMode;
   spatialMode: SpatialMode;
   isochronicAmount: number; // 0 to 1
   phaseLocking?: boolean;
-  
+
+
   // Protocol / Ramping
   isRamping: boolean;
   rampStartHz?: number;
   rampEndHz?: number;
 }
+
+export interface ResearchStudy {
+  authors: string;
+  year: number;
+  journal: string;
+  doi: string;
+  study_design: string;
+  effect_size: string;
+  outcome: string;
+}
+
+export interface ClinicalProtocol {
+  id: string;
+  name: string;
+  tier: 'evidence-supported' | 'theory-grounded' | 'research';
+  therapeutic_outcome: string;
+  beatFreq: number;
+  carrierFreq: number;
+  durationMinutes: number;
+  research: {
+    primary_study: ResearchStudy;
+    strength_of_evidence: string;
+    contraindications: string[];
+    mechanism: string;
+  };
+  ui_description: string;
+  session_instructions: string;
+}
+
 
 export interface ChatMessage {
   role: 'user' | 'assistant' | 'system';

@@ -1,0 +1,459 @@
+{
+    "presets": [
+        {
+            "id": "sleep_sws_latency_025hz",
+            "type": "clinical",
+            "state": "slow-wave sleep onset",
+            "target_band": "slow oscillation / delta (0.25 Hz; <1 Hz)",
+            "carrier_frequency_hz": {
+                "left": 250,
+                "right": 250.25
+            },
+            "beat_frequency_hz": 0.25,
+            "suggested_session_minutes": 90,
+            "summary": "0.25 Hz binaural beats during a daytime nap shortened latency to N2 and N3 slow-wave sleep in healthy young adults.",
+            "therapeutic_mechanism": "Very-low-frequency beat is intended to promote very slow cortical oscillations associated with initiating slow-wave sleep, reducing sleep latency; EEG entrainment at this frequency is subtle.",
+            "citations": [
+                {
+                    "title": "Binaural beats at 0.25 Hz shorten the latency to slow-wave sleep during daytime naps",
+                    "authors": "Matsumoto et al.",
+                    "year": 2024,
+                    "journal": "Scientific Reports",
+                    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11525714/"
+                }
+            ]
+        },
+        {
+            "id": "sleep_delta_3hz",
+            "type": "clinical",
+            "state": "deep sleep enhancement",
+            "target_band": "delta (3 Hz)",
+            "carrier_frequency_hz": {
+                "left": 250,
+                "right": 253
+            },
+            "beat_frequency_hz": 3,
+            "suggested_session_minutes": 60,
+            "summary": "3 Hz binaural beats during nocturnal sleep increased N3 (deep) sleep duration and altered sleep-stage distribution in a pilot study.",
+            "therapeutic_mechanism": "Beat at 3 Hz targets delta activity linked to N3 slow-wave sleep, potentially stabilizing deep sleep and influencing stage transitions.",
+            "citations": [
+                {
+                    "title": "A Novel Insight of Effects of a 3-Hz Binaural Beat on Sleep Stages During Sleep",
+                    "authors": "Nguyen et al.",
+                    "year": 2018,
+                    "journal": "Frontiers in Human Neuroscience",
+                    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6165862/"
+                }
+            ]
+        },
+        {
+            "id": "sleep_dynamic_0_3hz",
+            "type": "clinical",
+            "state": "sleep onset and maintenance",
+            "target_band": "slow oscillation / delta (0–3 Hz dynamic)",
+            "carrier_frequency_hz": {
+                "left": 100,
+                "right_min": 100,
+                "right_max": 103
+            },
+            "beat_frequency_hz": {
+                "min": 0,
+                "max": 3
+            },
+            "suggested_session_minutes": 45,
+            "summary": "Dynamic 0–3 Hz binaural beats embedded in music improved subjective sleep quality and autonomic markers compared with control audio.",
+            "therapeutic_mechanism": "Slowly varying low-frequency differences aim to nudge networks toward slow oscillations and delta activity while shifting autonomic balance toward parasympathetic dominance.",
+            "citations": [
+                {
+                    "title": "Effect of Dynamic Binaural Beats on Sleep Quality: A Proof-of-Concept Study with Questionnaire and Biosignals",
+                    "authors": "Chang et al.",
+                    "year": 2024,
+                    "journal": "Sleep",
+                    "url": "https://academic.oup.com/sleep/article/doi/10.1093/sleep/zsae097/7647043"
+                }
+            ]
+        },
+        {
+            "id": "sleep_insomnia_lowfreq",
+            "type": "clinical",
+            "state": "insomnia and sleep quality",
+            "target_band": "delta/theta (2–7 Hz protocol)",
+            "carrier_frequency_hz": {
+                "left": 200,
+                "right": 204
+            },
+            "beat_frequency_hz": 4,
+            "suggested_session_minutes": 30,
+            "summary": "Low-frequency binaural beat programs (around 2–7 Hz) improved global sleep quality and insomnia severity in adults with insomnia.",
+            "therapeutic_mechanism": "Repeated exposure to low-frequency beats fosters slower EEG activity during sleep onset and may reduce hyperarousal contributing to insomnia.",
+            "citations": [
+                {
+                    "title": "The Effectiveness of Brainwave Entrainment by Binaural Beats on the Sleep Quality",
+                    "authors": "Delavar et al.",
+                    "year": 2022,
+                    "journal": "Journal of Sleep Sciences",
+                    "url": "https://publish.kne-publishing.com/index.php/JSS/article/view/10890"
+                },
+                {
+                    "title": "Binaural Beats' Effect on Brain Activity and Psychiatric Disorders: A Narrative Review",
+                    "authors": "Askarpour et al.",
+                    "year": 2024,
+                    "journal": "The Open Public Health Journal",
+                    "url": "https://openpublichealthjournal.com/VOLUME/17/ELOCATOR/e18749445332258/FULLTEXT/"
+                }
+            ]
+        },
+        {
+            "id": "anxiety_theta_6hz_single_session",
+            "type": "clinical",
+            "state": "acute anxiety reduction",
+            "target_band": "theta (6 Hz)",
+            "carrier_frequency_hz": {
+                "left": 250,
+                "right": 256
+            },
+            "beat_frequency_hz": 6,
+            "suggested_session_minutes": 20,
+            "summary": "A single 20-minute session of 4–7 Hz auditory beat stimulation, including 6 Hz, reduced somatic and cognitive state anxiety in adults taking anxiolytics.",
+            "therapeutic_mechanism": "Theta-range beats combined with calming audio may enhance relaxation, modulate limbic networks, and reduce anxiety-related autonomic arousal.",
+            "citations": [
+                {
+                    "title": "The effects of music & auditory beat stimulation on anxiety: A randomized clinical trial",
+                    "authors": "Isik et al.",
+                    "year": 2022,
+                    "journal": "PLOS ONE",
+                    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0259312"
+                },
+                {
+                    "title": "Effects of binaural beat therapy with different frequencies on anxiety and depression among college students",
+                    "authors": "Zhang et al.",
+                    "year": 2025,
+                    "journal": "BMC Psychiatry",
+                    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12145584/"
+                }
+            ]
+        },
+        {
+            "id": "anxiety_multi_frequency_6_10_25hz",
+            "type": "clinical",
+            "state": "anxiety and autonomic regulation",
+            "target_band": "theta, alpha, beta (6, 10, 25 Hz)",
+            "carrier_frequency_hz": {
+                "left": 250,
+                "right_options": [
+                    256,
+                    260,
+                    275
+                ]
+            },
+            "beat_frequency_hz": [
+                6,
+                10,
+                25
+            ],
+            "suggested_session_minutes": 20,
+            "summary": "College students exposed for 20 minutes to 6, 10, or 25 Hz binaural beats embedded in natural sounds showed reduced anxiety and improved heart-rate-variability markers.",
+            "therapeutic_mechanism": "Multiple beat frequencies in theta, alpha, and beta ranges appear to reduce state anxiety partly via autonomic nervous system modulation; no clear winner among specific frequencies.",
+            "citations": [
+                {
+                    "title": "Effects of binaural beat therapy with different frequencies on anxiety and depression among college students",
+                    "authors": "Zhang et al.",
+                    "year": 2025,
+                    "journal": "BMC Psychiatry",
+                    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12145584/"
+                }
+            ]
+        },
+        {
+            "id": "anxiety_preop_alpha_10hz",
+            "type": "clinical",
+            "state": "preoperative anxiety reduction",
+            "target_band": "alpha (10 Hz)",
+            "carrier_frequency_hz": {
+                "left": 250,
+                "right": 260
+            },
+            "beat_frequency_hz": 10,
+            "suggested_session_minutes": 20,
+            "summary": "Preoperative 10 Hz binaural beat stimulation has been used in several trials to reduce state anxiety and sometimes anesthetic requirements in surgical patients.",
+            "therapeutic_mechanism": "Alpha entrainment is linked to relaxed wakefulness and may lower preoperative anxiety by shifting cortical rhythms and supporting parasympathetic dominance.",
+            "citations": [
+                {
+                    "title": "Effects of Listening to Binaural Beats on Anxiety Levels and Pain Scores in Male Patients Undergoing Cystoscopy and Ureteral Stent Removal",
+                    "authors": "Ayoub et al.",
+                    "year": 2020,
+                    "journal": "Journal of Endourology",
+                    "url": "https://www.liebertpub.com/doi/10.1089/end.2020.0353"
+                },
+                {
+                    "title": "Binaural beat stimulation as a tool to reduce preoperative anxiety in patients undergoing elective surgery and general anesthesia",
+                    "authors": "Schappacher-Tilp et al.",
+                    "year": 2025,
+                    "journal": "Biomedical Engineering Advances",
+                    "url": "https://iopscience.iop.org/article/10.1088/2057-1976/adfa9d"
+                }
+            ]
+        },
+        {
+            "id": "anxiety_pain_procedural_mixed_lowfreq",
+            "type": "clinical",
+            "state": "procedural anxiety and pain",
+            "target_band": "delta/theta (≤7 Hz, protocol-level)",
+            "carrier_frequency_hz": {
+                "left": 200,
+                "right": 206
+            },
+            "beat_frequency_hz": 6,
+            "suggested_session_minutes": 15,
+            "summary": "Low-frequency binaural beats (≤7 Hz) embedded in music reduced anxiety and improved tolerance in multiple invasive procedures such as bronchoscopy and colonoscopy.",
+            "therapeutic_mechanism": "Slow beats during procedures help distract, reduce anticipatory anxiety, and support autonomic stability, with modest or variable effects on pain ratings.",
+            "citations": [
+                {
+                    "title": "The effect of binaural beat audio on anxiety in patients undergoing fiberoptic bronchoscopy",
+                    "authors": "Srivastava et al.",
+                    "year": 2022,
+                    "journal": "Medicine",
+                    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9276398/"
+                },
+                {
+                    "title": "Effect of binaural beats on pain, anxiety, and procedure tolerance in patients undergoing colonoscopy without sedation",
+                    "authors": "Kara et al.",
+                    "year": 2025,
+                    "journal": "European Journal of Therapeutics",
+                    "url": "http://dergipark.org.tr/en/doi/10.18621/eurj.1604977"
+                }
+            ]
+        },
+        {
+            "id": "depression_alpha_10hz_multiweek",
+            "type": "clinical",
+            "state": "depressive symptoms (adjunct)",
+            "target_band": "alpha (10 Hz)",
+            "carrier_frequency_hz": {
+                "left": 250,
+                "right": 260
+            },
+            "beat_frequency_hz": 10,
+            "suggested_session_minutes": 30,
+            "summary": "Daily 30-minute sessions of familiar music embedded with 10 Hz alpha binaural beats over several weeks reduced depression scores in older adults.",
+            "therapeutic_mechanism": "Alpha entrainment plus emotionally meaningful music may reduce hyperarousal and negative affect via relaxation and limbic–autonomic interactions.",
+            "citations": [
+                {
+                    "title": "Familiar Music Listening with Binaural Beats for Older People with Depressive Symptoms",
+                    "authors": "Huang et al.",
+                    "year": 2017,
+                    "journal": "Journal of Neuropsychiatry and Clinical Neurosciences",
+                    "url": "https://www.jneuropsychiatry.org/peer-review/familiar-music-listening-with-binaural-beats-for-older-people-with-depressive-symptoms.html"
+                },
+                {
+                    "title": "Effects of acoustic neurostimulation in healthy adults on symptoms of depression, anxiety, stress and sleep quality: a randomized clinical study",
+                    "authors": "Moraes et al.",
+                    "year": 2023,
+                    "journal": "Exploration of Medicine",
+                    "url": "https://www.explorationpub.com/uploads/Article/A100464/100464.pdf"
+                }
+            ]
+        },
+        {
+            "id": "relaxation_alpha_10hz_single",
+            "type": "clinical",
+            "state": "relaxation and acute stress",
+            "target_band": "alpha (10 Hz)",
+            "carrier_frequency_hz": {
+                "left": 250,
+                "right": 260
+            },
+            "beat_frequency_hz": 10,
+            "suggested_session_minutes": 30,
+            "summary": "Music containing 10 Hz binaural beats decreased heart rate and systolic blood pressure and improved HRV indices in older adults during a single listening session.",
+            "therapeutic_mechanism": "Promoting alpha rhythms is associated with relaxed but awake states and supports parasympathetic activation, lowering physiological stress markers.",
+            "citations": [
+                {
+                    "title": "Familiar Music Listening with Binaural Beats for Older People with Depressive Symptoms",
+                    "authors": "Huang et al.",
+                    "year": 2017,
+                    "journal": "Journal of Neuropsychiatry and Clinical Neurosciences",
+                    "url": "https://www.jneuropsychiatry.org/peer-review/familiar-music-listening-with-binaural-beats-for-older-people-with-depressive-symptoms.html"
+                }
+            ]
+        },
+        {
+            "id": "pain_theta_6hz_multiweek",
+            "type": "clinical",
+            "state": "chronic pain modulation",
+            "target_band": "theta (6 Hz)",
+            "carrier_frequency_hz": {
+                "left": 250,
+                "right": 256
+            },
+            "beat_frequency_hz": 6,
+            "suggested_session_minutes": 20,
+            "summary": "Twice-weekly 20-minute 6 Hz binaural beat sessions over several weeks reduced perceived pain severity in clinical samples.",
+            "therapeutic_mechanism": "Theta beats likely affect cognitive–affective aspects of pain, shifting attention and emotional appraisal rather than nociceptive transmission.",
+            "citations": [
+                {
+                    "title": "Effects of binaural beats and isochronic tones on brain wave entrainment and pain perception",
+                    "authors": "García-Argibay et al.",
+                    "year": 2021,
+                    "journal": "International Journal of Psychophysiology",
+                    "url": "http://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S1665-50442021000600238"
+                }
+            ]
+        },
+        {
+            "id": "theta_entrainment_6hz_cognition",
+            "type": "entrainment",
+            "state": "theta cognitive support",
+            "target_band": "theta (6 Hz)",
+            "carrier_frequency_hz": {
+                "left": 250,
+                "right": 256
+            },
+            "beat_frequency_hz": 6,
+            "suggested_session_minutes": 10,
+            "summary": "Short daily 10-minute exposure to 6 Hz binaural beats for one month enhanced ERP markers (N200/P300) and aspects of attention and working memory.",
+            "therapeutic_mechanism": "6 Hz stimulation entrains theta activity and may strengthen frontoparietal networks involved in attention and cognitive control.",
+            "citations": [
+                {
+                    "title": "6 Hz Binaural Beats: One Month Effects on ERP Study",
+                    "authors": "Chockboondee et al.",
+                    "year": 2024,
+                    "journal": "Scientific Reports",
+                    "url": "https://www.nature.com/articles/s41598-024-68628-9"
+                }
+            ]
+        },
+        {
+            "id": "alpha_entrainment_10hz_generic",
+            "type": "entrainment",
+            "state": "relaxed focus",
+            "target_band": "alpha (10 Hz)",
+            "carrier_frequency_hz": {
+                "left": 300,
+                "right": 310
+            },
+            "beat_frequency_hz": 10,
+            "suggested_session_minutes": 15,
+            "summary": "10 Hz binaural beats consistently increase alpha-band power and are widely used for relaxed yet alert states in non-clinical users.",
+            "therapeutic_mechanism": "Alpha entrainment reduces excessive beta activity and supports a calm, focused state often associated with meditative awareness.",
+            "citations": [
+                {
+                    "title": "Analysis of EEG activity in response to binaural beats with different frequencies",
+                    "authors": "Becher et al.",
+                    "year": 2015,
+                    "journal": "Clinical Neurophysiology",
+                    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0167876014016353"
+                },
+                {
+                    "title": "Efficacy of binaural auditory beats in cognition, anxiety, and pain",
+                    "authors": "Garcia-Argibay et al.",
+                    "year": 2019,
+                    "journal": "Psychological Research",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/30073406/"
+                }
+            ]
+        },
+        {
+            "id": "beta_entrainment_16hz",
+            "type": "entrainment",
+            "state": "beta-band EEG entrainment",
+            "target_band": "beta (16 Hz)",
+            "carrier_frequency_hz": {
+                "left": 440,
+                "right": 456
+            },
+            "beat_frequency_hz": 16,
+            "suggested_session_minutes": 10,
+            "summary": "16 Hz binaural beats reliably increased EEG power at the beat frequency in controlled experiments, confirming robust beta-band entrainment.",
+            "therapeutic_mechanism": "Direct enhancement of 16 Hz beta oscillations may support vigilance and task engagement, although downstream cognitive benefits remain inconsistent.",
+            "citations": [
+                {
+                    "title": "A parametric investigation of binaural beats for brain entrainment and cognition",
+                    "authors": "García-Argibay et al.",
+                    "year": 2025,
+                    "journal": "Scientific Reports",
+                    "url": "https://www.nature.com/articles/s41598-025-88517-z"
+                },
+                {
+                    "title": "Binaural beats to entrain the brain? A systematic review of the literature",
+                    "authors": "García-Argibay et al.",
+                    "year": 2023,
+                    "journal": "PLOS ONE",
+                    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0286023"
+                }
+            ]
+        },
+        {
+            "id": "gamma_entrainment_40hz_memory",
+            "type": "entrainment",
+            "state": "gamma working memory and mood",
+            "target_band": "gamma (40 Hz)",
+            "carrier_frequency_hz": {
+                "left": 400,
+                "right": 440
+            },
+            "beat_frequency_hz": 40,
+            "suggested_session_minutes": 20,
+            "summary": "20–30 minutes of 40 Hz binaural beats enhanced gamma-band activity, improved working-memory performance, and showed mood benefits in small samples.",
+            "therapeutic_mechanism": "40 Hz beats entrain gamma oscillations involved in information binding and working memory, potentially supporting cognition and affect regulation.",
+            "citations": [
+                {
+                    "title": "Brain responses to 40-Hz binaural beat and effects on emotion and memory",
+                    "authors": "Colzato et al.",
+                    "year": 2017,
+                    "journal": "International Journal of Psychophysiology",
+                    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0167876017300387"
+                },
+                {
+                    "title": "The Effect of 40 Hz Binaural Beats on Working Memory",
+                    "authors": "Ortiz et al.",
+                    "year": 2021,
+                    "journal": "Revista de Neurología",
+                    "url": "https://doaj.org/article/1ecf330ec82f4347bd62c9871caf3701"
+                },
+                {
+                    "title": "Gamma entrainment frequency affects mood, memory and cognition",
+                    "authors": "Reedijk et al.",
+                    "year": 2020,
+                    "journal": "Scientific Reports",
+                    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7683678/"
+                }
+            ]
+        },
+        {
+            "id": "adhd_focus_beta_15hz",
+            "type": "entrainment",
+            "state": "attention and focus (experimental)",
+            "target_band": "low beta / SMR (15 Hz)",
+            "carrier_frequency_hz": {
+                "left": 300,
+                "right": 315
+            },
+            "beat_frequency_hz": 15,
+            "suggested_session_minutes": 20,
+            "summary": "Low-beta (12–15 Hz) beats are commonly used in neurofeedback for attention; binaural beats around 15 Hz are explored for focus, but controlled ADHD data are limited.",
+            "therapeutic_mechanism": "Enhancing SMR/low-beta activity may counter excess theta and support sustained attention; evidence is mostly extrapolated from neurofeedback rather than direct binaural trials.",
+            "citations": [
+                {
+                    "title": "Binaural Beats' Effect on Brain Activity and Psychiatric Disorders: A Narrative Review",
+                    "authors": "Askarpour et al.",
+                    "year": 2024,
+                    "journal": "The Open Public Health Journal",
+                    "url": "https://openpublichealthjournal.com/VOLUME/17/ELOCATOR/e18749445332258/FULLTEXT/"
+                },
+                {
+                    "title": "Efficacy of binaural auditory beats in cognition, anxiety, and pain",
+                    "authors": "Garcia-Argibay et al.",
+                    "year": 2019,
+                    "journal": "Psychological Research",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/30073406/"
+                }
+            ]
+        }
+    ],
+    "notes": {
+        "carrier_frequency_flexibility": "Most papers emphasize the beat (difference) frequency; carriers between roughly 100 and 500 Hz are commonly used and can be tuned for comfort as long as the interaural difference matches the target beat.[web:22][web:34]",
+        "evidence_quality": "Systematic reviews and meta-analyses highlight that while EEG entrainment at alpha, beta, and gamma frequencies is replicable, clinical outcomes (sleep, mood, pain, cognition) are small to moderate and not uniformly reproducible; presets should be treated as experimental tools, not proven therapies.[web:25][web:36][web:61]",
+        "safety_considerations": "Use moderate levels (<70 dB), avoid for people with photosensitive or sound-triggered epilepsy without medical clearance, and do not use during driving or operating machinery.[web:66]"
+    }
+}

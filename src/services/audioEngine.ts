@@ -506,8 +506,10 @@ class AudioEngine {
 
     public setFrequencies(carrier: number, beat: number) {
         if (!this.ctx) return;
-        this.updateOscillatorBanks(carrier, beat, 0.1);
+        // Optimization: Use crossfading instead of immediate switch to prevent zipper noise
+        this.crossfadeOscillatorBanks(carrier, beat, 0.05);
     }
+
 
     public scheduleRamp(startCarrier: number, startBeat: number, endCarrier: number, endBeat: number, duration: number) {
         if (!this.ctx) return;

@@ -9,48 +9,9 @@ export const DEFAULT_CARRIER = 200;
 export const DEFAULT_BEAT = 10;
 export const MAX_VOLUME = 1.0;
 
-export const PRESETS = [
-  {
-    name: "Deep Sleep (Delta)",
-    carrier: 100,
-    beat: 2.5,
-    noise: NoiseType.Brown,
-    carrierMode: CarrierMode.Soft,
-    description: "Promotes deep, restorative sleep."
-  },
-  {
-    name: "Meditation (Theta)",
-    carrier: 180,
-    beat: 6,
-    noise: NoiseType.Pink,
-    carrierMode: CarrierMode.Harmonic,
-    description: "Deep relaxation and meditation."
-  },
-  {
-    name: "Calm Focus (Alpha)",
-    carrier: 300,
-    beat: 10,
-    noise: NoiseType.Pink,
-    carrierMode: CarrierMode.Pure,
-    description: "Relaxed awareness and stress reduction."
-  },
-  {
-    name: "Active Focus (Beta)",
-    carrier: 400,
-    beat: 20,
-    noise: NoiseType.White,
-    carrierMode: CarrierMode.Pure,
-    description: "High alertness and problem solving."
-  },
-  {
-    name: "High Performance (Gamma)",
-    carrier: 500,
-    beat: 40,
-    noise: NoiseType.White,
-    carrierMode: CarrierMode.Harmonic,
-    description: "Peak cognitive processing."
-  }
-];
+export const PRESETS: any[] = [];
+
+export const CLINICAL_PROTOCOLS: any[] = [];
 
 export const KNOWLEDGE_BASE_SUMMARY = `
 {
@@ -112,3 +73,4 @@ export const DETERMINE_BAND = (beatFreq: number): BrainwaveBand => {
   if (beatFreq <= 30) return BrainwaveBand.Beta;
   return BrainwaveBand.Gamma;
 }
+
